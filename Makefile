@@ -1,5 +1,5 @@
-OUT_ZIP=Fedora32.zip
-LNCR_EXE=Fedora32.exe
+OUT_ZIP=FedoraRawhide.zip
+LNCR_EXE=Fedora.exe
 
 DLR=curl
 DLR_FLAGS=-L
@@ -43,7 +43,7 @@ rootfs: base.tar
 
 base.tar:
 	@echo -e '\e[1;31mExporting base.tar using docker...\e[m'
-	docker run --name fedorawsl library/fedora:32 /bin/bash -c "dnf update -y; dnf clean all; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow;"
+	docker run --name fedorawsl library/fedora:rawhide /bin/bash -c "dnf update -y; dnf install -y bc hostname procps e2fsprogs passwd nano neofetch p7zip ImageMagick @development-tools android-tools automake bison bzip2 bzip2-libs ccache curl dpkg-dev gcc gcc-c++ gperf java-1.8.0-openjdk libstdc++.i686 libxml2-devel lz4-libs lzop make ncurses-compat-libs openssl-devel optipng pngcrush python2 python3 python3-mako python-mako python-networkx schedtool squashfs-tools syslinux-devel zip zlib-devel zlib-devel.i686; curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo; chmod a+x /usr/bin/repo; dnf clean all; pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow;"
 	docker export --output=base.tar fedorawsl
 	docker rm -f fedorawsl
 
@@ -56,4 +56,4 @@ clean:
 	-rm rootfs.tar.gz
 	-sudo rm -r rootfs
 	-rm base.tar
-	-docker rmi library/fedora:32
+	-docker rmi library/fedora:rawhide
