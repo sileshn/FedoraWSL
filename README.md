@@ -14,7 +14,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 * Windows Subsystem for Linux feature is enabled.
 
 ## Install
-1. [Download](https://github.com/sileshn/FedoraWSL/releases) installer zip
+1. [Download](https://github.com/sileshn/FedoraWSL/releases/latest) installer zip
 2. Extract all files in zip file to same directory
 3. Run Fedora.exe to Extract rootfs and Register to WSL
 
