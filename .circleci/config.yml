@@ -5,6 +5,3 @@ jobs:
      - checkout
      # build
      - run: make all
-
-     # cleanup
-     - run: make clean
