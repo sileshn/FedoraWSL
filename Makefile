@@ -3,7 +3,7 @@ LNCR_EXE=Fedora.exe
 
 DLR=curl
 DLR_FLAGS=-L
-LNCR_ZIP_URL=https://gitlab.com/sileshn/wsldl/uploads/6750ff663858adb5f67fdc4ed2d384d6/icons.zip
+LNCR_ZIP_URL=https://github.com/sileshn/wsldl/releases/download/20201013/icons.zip
 LNCR_ZIP_EXE=Fedora.exe
 
 all: $(OUT_ZIP)
