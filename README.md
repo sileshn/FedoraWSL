@@ -1,17 +1,18 @@
 # FedoraWSL
-Fedora on WSL (Windows 10 FCU or later)
-based on [wsldl](https://github.com/yuk7/wsldl)
+Fedora on WSL (Windows 10 FCU or later) based on [wsldl](https://github.com/yuk7/wsldl)
 
 ![screenshot](https://raw.githubusercontent.com/sileshn/FedoraWSL/master/img/screenshot.png)
-
-[![CircleCI](https://circleci.com/gh/yosukes-dev/FedoraWSL.svg?style=svg)](https://circleci.com/gh/yosukes-dev/FedoraWSL2)
+[![CircleCI](https://circleci.com/gh/yosukes-dev/FedoraWSL.svg?style=svg)](https://circleci.com/gh/yosukes-dev/FedoraWSL2) 
 [![Github All Releases](https://img.shields.io/github/downloads/yosukes-dev/FedoraWSL/total.svg?style=flat-square)](https://github.com/yosukes-dev/FedoraWSL/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/yosukes-dev/FedoraWSL.svg?style=flat-square)
 
-## Requirements
-* Windows 10 Fall Creators Update x64 or later.
-* Windows Subsystem for Linux feature is enabled.
+## 💻 Requirements
+* For x64 systems: Version 1903 or higher, with Build 18362 or higher.
+* For ARM64 systems: Version 2004 or higher, with Build 19041 or higher.
+* Builds lower than 18362 do not support WSL 2.
+* Enable Windows Subsystem for Linux feature.
+* Download and install the Linux kernel update package from [here](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi).
 
 ## Install
 1. [Download](https://github.com/sileshn/FedoraWSL/releases/latest) installer zip
