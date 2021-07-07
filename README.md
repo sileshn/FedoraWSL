@@ -2,7 +2,8 @@
 Fedora on WSL (Windows 10 FCU or later) based on [wsldl](https://github.com/yuk7/wsldl)
 
 [![Screenshot-2021-02-14-074535.png](https://i.postimg.cc/J764qmCm/Screenshot-2021-02-14-074535.png)](https://postimg.cc/F1S4rMKn)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![License](https://img.shields.io/github/license/yosukes-dev/FedoraWSL.svg?style=flat-square)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
+[![License](https://img.shields.io/github/license/sileshn/FedoraWSL.svg?style=flat-square)](https://raw.githubusercontent.com/sileshn/FedoraWSL/master/LICENSE)
 
 ## 💻 Requirements
 * For x64 systems: Version 1903 or higher, with Build 18362 or higher.
